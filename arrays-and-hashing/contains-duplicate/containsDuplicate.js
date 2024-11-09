@@ -3,7 +3,7 @@ class Solution {
    * @param {number[]} nums
    * @return {boolean}
    */
-  hasDuplicate(nums) {
+  hasDuplicate (nums) {
     const uniqueNums = new Set();
 
     for (const num of nums) {

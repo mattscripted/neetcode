@@ -4,7 +4,7 @@ class Solution {
    * @param {number} target
    * @return {number[]}
    */
-  twoSum(nums, target) {
+  twoSum (nums, target) {
     const valueToIndex = {};
 
     for (const [index, num] of nums.entries()) {
@@ -12,7 +12,7 @@ class Solution {
 
       // Have we seen that match before?
       if (Object.hasOwn(valueToIndex, desiredPair)) {
-        return [valueToIndex[desiredPair], index]
+        return [valueToIndex[desiredPair], index];
       }
 
       valueToIndex[num] = index;
